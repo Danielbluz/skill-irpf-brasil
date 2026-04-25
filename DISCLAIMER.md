@@ -28,7 +28,7 @@ O conteúdo reflete:
 - Síntese de fontes secundárias (artigos jornalísticos, blogs especializados, comunicados oficiais).
 - Auditoria automatizada por modelos de linguagem (Perplexity, Gemini) — que **podem ter produzido falsos positivos ou negativos** durante a validação.
 
-**O autor é Engenheiro Eletricista**, não contador.
+**O autor é Engenheiro Eletricista**, especialista em Mercados de Energia Elétrica e Geração Distribuída, entusiasta de Transformação Digital e Inteligência Artificial — **não é contador habilitado** nem profissional da área tributária.
 
 ---
 

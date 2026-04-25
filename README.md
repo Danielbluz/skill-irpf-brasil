@@ -230,7 +230,7 @@ MIT License — ver [LICENSE](LICENSE).
 
 **Daniel Luz** ([@Danielbluz](https://github.com/Danielbluz))
 
-Engenheiro Eletricista. Não-contador. Curioso sobre tributação brasileira.
+Engenheiro Eletricista, especialista em **Mercados de Energia Elétrica** e **Geração Distribuída**. Entusiasta de **Transformação Digital** e **Inteligência Artificial**. **Não-contador** — este projeto é exercício de organização de conhecimento, não consultoria fiscal.
 
 > Se este projeto te ajudou, considere dar uma ⭐ — é o meu único feedback.
 
