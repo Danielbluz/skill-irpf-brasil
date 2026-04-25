@@ -1,0 +1,40 @@
+name: ✨ Nova cobertura / Feature
+description: Sugerir tema novo ou melhoria de funcionalidade
+title: "[FEATURE] "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: tema
+    attributes:
+      label: Tema ou funcionalidade sugerida
+      placeholder: |
+        Sugiro adicionar cobertura sobre [tema]. Atualmente a skill não trata X, e isso é
+        importante para usuários que [motivação].
+    validations:
+      required: true
+
+  - type: textarea
+    id: justificativa
+    attributes:
+      label: Justificativa
+      description: Por que esse tema deveria ser coberto?
+      placeholder: |
+        - Volume de usuários afetados
+        - Risco regulatório se não coberto
+        - Lacuna identificada via [fonte]
+    validations:
+      required: true
+
+  - type: textarea
+    id: fontes
+    attributes:
+      label: Fontes oficiais (se regulatório)
+      description: Links para legislação ou manual RFB
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Confirmações
+      options:
+        - label: Verifiquei que o tema não é coberto em arquivos existentes da skill
+          required: true

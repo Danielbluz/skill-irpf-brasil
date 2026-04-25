@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: ⚖️ Consulta fiscal individual
+    url: https://www.cfc.org.br/registro/busca-de-contadores
+    about: Para casos específicos, consulte um contador habilitado registrado no CRC. Este projeto não fornece consultoria.
+  - name: 📖 Manual oficial IRPF (Perguntas e Respostas RFB)
+    url: https://www.gov.br/receitafederal/pt-br/centrais-de-conteudo/publicacoes/perguntas-e-respostas/dirpf/
+    about: Para dúvidas regulatórias gerais, consulte o manual oficial atualizado pela Receita Federal.
+  - name: 💬 Discussions (em breve)
+    url: https://github.com/Danielbluz/skill-irpf-brasil/discussions
+    about: Para discussões gerais não-bug e não-correção (será habilitado se houver demanda).

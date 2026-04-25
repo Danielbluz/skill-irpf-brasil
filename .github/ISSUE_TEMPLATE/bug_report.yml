@@ -1,0 +1,80 @@
+name: 🐛 Bug Report
+description: Reportar erro no parser DBK ou comportamento inesperado da skill
+title: "[BUG] "
+labels: ["bug", "triage"]
+assignees:
+  - Danielbluz
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Obrigado por reportar um bug! Antes de continuar:
+
+        - ⚠️ **Não inclua dados pessoais reais** (CPF, valores, nomes) — use placeholders ou dados sintéticos.
+        - 🔍 **Verifique** se já existe issue similar aberta.
+        - 📖 Consulte o [DISCLAIMER.md](../blob/main/DISCLAIMER.md) — projeto pessoal, sem SLA.
+
+  - type: dropdown
+    id: component
+    attributes:
+      label: Componente afetado
+      description: Qual parte da skill apresenta o problema?
+      options:
+        - Parser Python (scripts/parse_dbk.py)
+        - Arquivo de referência (reference/*.md)
+        - SKILL.md ou REFERENCE.md
+        - Documentação (README, CONTRIBUTING, DISCLAIMER)
+        - Outro
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Descrição do bug
+      description: O que aconteceu? O que você esperava que acontecesse?
+      placeholder: |
+        Quando rodei o parser_dbk.py em um arquivo DBK, recebi erro X.
+        Esperava que apresentasse Y.
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Como reproduzir
+      description: Passos para reproduzir o problema. Não inclua dados sensíveis.
+      placeholder: |
+        1. Rodar `python scripts/parse_dbk.py /caminho/anonimo.DBK`
+        2. Observar erro no terminal
+        3. ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: Ambiente
+      placeholder: |
+        - SO: Windows 11 / Linux / macOS
+        - Python: 3.x.y (output de `python --version`)
+        - Versão da skill: v1.0
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs / Stack trace
+      description: Cole o erro completo (mascarando dados sensíveis se houver)
+      render: shell
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Confirmações
+      options:
+        - label: Não incluí dados pessoais reais (CPF/CNPJ/valores reais) neste report
+          required: true
+        - label: Verifiquei issues existentes antes de abrir esta
+          required: true

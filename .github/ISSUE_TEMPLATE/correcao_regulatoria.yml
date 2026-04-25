@@ -1,0 +1,91 @@
+name: ⚖️ Correção Regulatória
+description: Reportar valor, alíquota, prazo ou interpretação fiscal incorreta
+title: "[CORRIGIR] "
+labels: ["correcao-regulatoria", "alta-prioridade"]
+assignees:
+  - Danielbluz
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Importante
+
+        **Correções regulatórias** são as contribuições mais valiosas para este projeto.
+
+        ⚠️ **Sempre** inclua **fonte oficial** (IN RFB, Lei publicada, comunicado oficial).
+        ❌ Sem fonte oficial, esta correção **não será aceita**.
+
+  - type: input
+    id: arquivo
+    attributes:
+      label: Arquivo afetado
+      description: Qual arquivo da skill contém o erro?
+      placeholder: "reference/deducoes-modelos.md"
+    validations:
+      required: true
+
+  - type: input
+    id: secao
+    attributes:
+      label: Seção / linha
+      description: Onde exatamente está o erro?
+      placeholder: "Seção 'Tabela progressiva 2025', linha XX"
+
+  - type: textarea
+    id: erro_atual
+    attributes:
+      label: Conteúdo atual (errado)
+      description: Copie o trecho exato que está incorreto.
+      render: markdown
+    validations:
+      required: true
+
+  - type: textarea
+    id: correto
+    attributes:
+      label: Conteúdo correto
+      description: O que deveria estar lá?
+      render: markdown
+    validations:
+      required: true
+
+  - type: textarea
+    id: fontes
+    attributes:
+      label: Fontes oficiais
+      description: |
+        Inclua links para:
+        - Instrução Normativa RFB (legisweb, gov.br/receitafederal)
+        - Lei (planalto.gov.br)
+        - Comunicado RFB (gov.br/receitafederal/noticias)
+        - Manual oficial Perguntas e Respostas IRPF
+      placeholder: |
+        - https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda/tabelas/2026
+        - IN RFB nº 2.312/2026, art. X, inciso Y
+        - ...
+    validations:
+      required: true
+
+  - type: dropdown
+    id: severidade
+    attributes:
+      label: Severidade do impacto
+      options:
+        - "Crítica — pode levar usuário a sonegação ou pagamento indevido"
+        - "Alta — afeta cálculo de imposto a pagar/restituir"
+        - "Média — afeta interpretação mas não o valor final"
+        - "Baixa — atualização de informação contextual"
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Confirmações
+      options:
+        - label: Inclui fonte oficial (não apenas blog/notícia secundária)
+          required: true
+        - label: A correção se aplica ao ciclo IRPF 2026 (ano-base 2025)
+          required: true
+        - label: Não estou submetendo conteúdo gerado por LLM sem verificação humana
+          required: true
